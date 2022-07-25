@@ -8,12 +8,14 @@
     <title>Panda-commerce</title>
     <!-- CDN link for CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- header started from here! -->
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg shadow-lg  fixed-top bg-light mb-5">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt=""></a>
@@ -27,13 +29,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Subscribe</a>
+                            <a class="nav-link " href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -41,10 +43,10 @@
         </nav>
 
         <!-- slider start -->
-        <section class="mt-5">
+        <section class="my-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active bg-info border rounded p-5">
+                    <div class="carousel-item active pandda-bg-info border rounded p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center ">
                                 <div>
@@ -52,7 +54,7 @@
                                     <p>This is the best tv in the world for people who just want to waste time in front
                                         of tv.</p>
                                     <h2>$420</h2>
-                                    <div class="btn btn-danger">Buy now</div>
+                                    <div class="btn pandda-btn-buy-now">Buy now</div>
                                 </div>
 
                             </div>
@@ -61,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item active bg-info border rounded p-5">
+                    <div class="carousel-item active pandda-bg-info border rounded p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center ">
                                 <div>
@@ -69,7 +71,7 @@
                                     <p>This is the best x-box in the world for people who just want to waste time in
                                         front of fake sports.</p>
                                     <h2>$500</h2>
-                                    <div class="btn btn-danger">Buy now</div>
+                                    <div class="btn pandda-btn-buy-now">Buy now</div>
                                 </div>
 
                             </div>
@@ -78,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item active bg-info border rounded p-5">
+                    <div class="carousel-item active pandda-bg-info border rounded p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center ">
                                 <div>
@@ -87,7 +89,7 @@
                                         front
                                         of fake sports.</p>
                                     <h2>$200</h2>
-                                    <div class="btn btn-danger">Buy now</div>
+                                    <div class="btn pandda-btn-buy-now">Buy now</div>
                                 </div>
 
                             </div>
@@ -119,7 +121,7 @@
         <!-- categories start -->
         <section>
             <div class="container text-center my-5">
-                <div class="row g-2">
+                <div class="row g-4 categories">
                     <!-- single categorie -->
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
                         <div class="p-3 border rounded-3 bg-warning d-flex align-items-center justify-content-around">
@@ -148,7 +150,7 @@
         </section>
         <!-- categories end -->
         <!-- shoes section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -164,7 +166,7 @@
                         </div>
 
                         <div class="m-3">
-                            <button class="btn btn-danger px-5 py-2"> Buy now</button>
+                            <button class="btn pandda-btn-buy-now px-5 py-2"> Buy now</button>
                         </div>
                     </div>
                 </div>
@@ -181,7 +183,7 @@
                         </div>
 
                         <div class="m-3">
-                            <button class="btn btn-danger px-5 py-2"> Buy now</button>
+                            <button class="btn pandda-btn-buy-now px-5 py-2"> Buy now</button>
                         </div>
                     </div>
                 </div>
@@ -197,7 +199,7 @@
                         </div>
 
                         <div class="m-3">
-                            <button class="btn btn-danger px-5 py-2"> Buy now</button>
+                            <button class="btn pandda-btn-buy-now px-5 py-2"> Buy now</button>
                         </div>
                     </div>
                 </div>
@@ -207,7 +209,8 @@
         </section>
         <!-- shoes section end -->
         <!-- Backpack section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
+            <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card border border-0 shadow-lg rounded-3 h-100">
@@ -224,7 +227,7 @@
                         </div>
 
                         <div class="m-3">
-                            <button class="btn btn-danger px-5 py-2"> Buy now</button>
+                            <button class="btn pandda-btn-buy-now px-5 py-2"> Buy now</button>
                         </div>
                     </div>
                 </div>
@@ -241,7 +244,7 @@
                         </div>
 
                         <div class="m-3">
-                            <button class="btn btn-danger px-5 py-2"> Buy now</button>
+                            <button class="btn pandda-btn-buy-now px-5 py-2"> Buy now</button>
                         </div>
                     </div>
                 </div>
@@ -258,13 +261,36 @@
                         </div>
 
                         <div class="m-3">
-                            <button class="btn btn-primary px-5 py-2"> Buy now</button>
+                            <button class="btn pandda-btn-buy-now px-5 py-2"> Buy now</button>
                         </div>
                     </div>
                 </div>
         </section>
         <!-- Backpack section end -->
+        <!-- Subscribe part start -->
+        <section style="height:300px;"
+            class="container rounded-3 d-flex justify-content-center align-items-center pandda-bg-info" id="subscribe">
+            <div>
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p>Get updates on sales, specials and more..</p>
+                <form>
+                    <div class="mb-1">
+
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+
+                    <button type="submit" class="btn pandda-btn-buy-now">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- Subscribe part end -->
+
     </main>
+    <!-- footer section -->
+    <footer class="mt-5 text-center">
+        <p><small>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
     <!-- CDN link for  JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
